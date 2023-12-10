@@ -14,18 +14,23 @@
     background-color: rgb(29, 134, 209);
     color: white;
     height: 100vh;
-    min-width: 20vw;
+    width: 20vw;
 }
 
 .navbar-container{
-    border-bottom: 1px solid black;
-    height: 160px;
+    /* border-bottom: 1px solid black;   */
+    /* height: 160px; */
+    height: 20vh;
     width: 80vw;
     padding: 20px;
+    /* z-index: 10; */
+    position: relative;
+    /* top: 10px; */
+    box-shadow: 0 5px 5px #c8e3fb;
 }
 
 .upper{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     height: 50%;
@@ -35,10 +40,12 @@
     background-color: #e3f1fe;
     border-radius: 15px;
     border: none;
+    height: 30px;
+    width: 350px;
 }
 
 .lower{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +63,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(29, 134, 209);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 15px;
     color: white;
     width: 75px;
@@ -65,5 +72,24 @@
 
 .projects-container{
     background-color: #e3f1fe;
-    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 20px 20px
+}
+
+.projects-container .projects .project{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #c8e3fb;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+}
+.projects-container .announcements .announcement{
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
 }
