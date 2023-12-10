@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body{
+    font-family: Roboto, sans-serif;
 }
 
 .dashboard-container{
@@ -11,17 +17,23 @@
     display: flex;
     flex-direction: column;;
     align-items: center;
-    background-color: rgb(29, 134, 209);
+    background-color: rgb(89, 167, 255);
     color: white;
     height: 100vh;
     width: 20vw;
+    /* box-shadow: 0 5px 5px #c8e3fb; */
+}
+
+.text-logo{
+    display: flex;
+    align-items: center;
 }
 
 .navbar-container{
     /* border-bottom: 1px solid black;   */
     /* height: 160px; */
     height: 20vh;
-    width: 80vw;
+    width: 100%;
     padding: 20px;
     /* z-index: 10; */
     position: relative;
@@ -33,7 +45,12 @@
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     height: 50%;
+    /* width: 5px; */
+    /* position: relative; */
+    /* width: auto; */
+
 }
 
 .upper .upperLeft input{
@@ -42,6 +59,32 @@
     border: none;
     height: 30px;
     width: 350px;
+}
+
+.upperRight{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    /* position: relative; */
+    width: 500px;
+}
+
+.upperRight .topLogo{
+    background-color: rgb(242, 205, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    /* margin-bottom: 70px; */
+    position: absolute;
+    top: 0;
+    /* margin-right: 500px; */
+    right: 175px;
+    
 }
 
 .lower{
@@ -62,7 +105,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(29, 134, 209);
+    background-color: rgb(89, 167, 255);
     /* border: 1px solid black; */
     border-radius: 15px;
     color: white;
@@ -78,17 +121,40 @@
     padding: 20px 20px
 }
 
-.projects-container .projects .project{
+.projects-container .projects .project-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects-container .projects .project-container .project{
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 5px 5px #c8e3fb;
-    width: 400px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-top-left-radius: 5px; */
+    box-shadow: 0 5px 5px #c8e3fb, 0 0 rgb(242, 205, 57), -01px 0 rgb(242, 205, 57), -01px 0 rgb(242, 205, 57), -02px 0 rgb(242, 205, 57), -02px 0 rgb(242, 205, 57), -03px 0 rgb(242, 205, 57), -03px 0 rgb(242, 205, 57), -04px 0 rgb(242, 205, 57), -04px 0 rgb(242, 205, 57), -05px 0 rgb(242, 205, 57), -05px 0 rgb(242, 205, 57) ;
+    width: 500px;
     height: 200px;
     padding: 20px;
+}
+.rightSide-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 .projects-container .announcements .announcement{
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0 5px 5px #c8e3fb;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+}
+.projects-container .trending .trend{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #c8e3fb;
     width: 300px;
     height: 100px;
     padding: 20px;
