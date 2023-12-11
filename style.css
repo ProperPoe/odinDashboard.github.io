@@ -258,14 +258,46 @@ button{
     border-radius: 5px;
     box-shadow: 0 5px 5px #c8e3fb;
     min-width: 100%;
-    height: 100px;
+    min-height: 100px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.afterFirstAnn{
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.project-container .trending{
+    display: flex;
+    flex-direction: column;
 }
 .projects-container .trending .trend{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 5px 5px #c8e3fb;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
     min-width: 100%;
-    height: 100px;
+    min-height: 100px;
     padding: 20px;
+}
+
+.trendLogo{
+    background-color: rgb(242, 205, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.trendUser{
+    display: flex;
+    gap: 10px;
 }
